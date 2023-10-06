@@ -14,8 +14,8 @@ body {
     font-family: "Roboto Mono", sans-serif;
     color: #252525;
     font-weight: 400;
-    background-color: #f7f2e9;
-    border-bottom: 1.6rem solid #edc84b;
+    background-color: #e9f7f1;
+    border-bottom: 1.6rem solid #4bedac;
     min-height: 100vh;
     padding: 3.2rem;
     padding-bottom: 6rem;
@@ -39,7 +39,7 @@ body {
 
 .header h1 {
     /* Non-accessible color */
-    color: #edc84b;
+    color: #4bedac;
     /* color: #af8602; */
 
     text-transform: uppercase;
@@ -57,8 +57,8 @@ body {
     display: block;
     content: "";
     height: 3px;
-    width: 12rem;
-    background-color: #edc84b;
+    width: 4rem;
+    background-color: #4bedac;
     position: absolute;
     top: calc(50% - 1px);
 }
@@ -168,14 +168,14 @@ body {
     border: none;
     font-size: 1.4rem;
     font-weight: 500;
-    background-color: #edc84b;
+    background-color: #4bedac;
     padding: 1.4rem 3.2rem;
     cursor: pointer;
     transition: all 0.2s;
 }
 
 .btn:hover {
-    background-color: #e9bb24;
+    background-color: #24e9a1;
 }
 
 /*

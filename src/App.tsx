@@ -1,6 +1,17 @@
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Menu from "./components/Menu";
 
-const pizzaData = [
+export interface I_pizza {
+    name: string;
+    ingredients: string;
+    price: number;
+    photoName: string;
+    soldOut: boolean;
+}
+
+const pizzaData: I_pizza[] | [] = [
     {
         name: "Focaccia",
         ingredients: "Bread with italian olive oil and rosemary",
@@ -47,12 +58,11 @@ const pizzaData = [
 
 function App() {
     return (
-        <>
-            <h1>pizza menu</h1>
-            <img src="pizzas/focaccia.jpg" />
-            <h2>Focaccia</h2>
-            <p>Bread with italian olive oil and rosemary</p>
-        </>
+        <div className="container">
+            <Header />
+            <Menu pizzaData={pizzaData} />
+            <Footer />
+        </div>
     );
 }
 
